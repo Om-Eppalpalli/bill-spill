@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <title>Bill Spill</title>
+</head>
+<body>
+    <header></header>
+    <section>
+        <div id="container">
+            <div id="container_up">
+                <p id="para_bill" class="bill_spill_class">BILL</p>
+                <p id="para_spill" class="bill_spill_class" style="margin-top: -15px;">SPILL</p>
+            </div>
+            <!--  -->
+            <!--  -->
+            <!--  -->
+            <div id="container_down">
+                <div id="container_down_left">
+                    <!--  -->
+                    <div id="bill_generate">
+                        <label for="bill_number" id="label_bill" class="label_class" style="margin-bottom: 10px;">Bill</label>
+                        <input type="number" id="bill_number" placeholder="Enter Bill Amount"  min="0">
+                    </div>
+                    <!--  -->
+                    <div id="select_tip">
+                        <label for="six_buttons" id="label_tip" class="label_class" style="margin-bottom: 15px;">Select Tip %</label>
+                        <div id="all_buttons">
+                            <div id="buttons_down" class="all_buttons_class">
+                                <button class="six_buttons" id="button_five">5%</button>
+                                <button class="six_buttons" id="button_ten">10%</button>
+                                <button class="six_buttons" id="button_fifteen">15%</button>
+                            </div>
+                            <div id="buttons_up" class="all_buttons_class">
+                                <button class="six_buttons" id="button_twenty_five">25%</button>
+                                <button class="six_buttons" id="button_fifty">50%</button>
+                                <button class="six_buttons" id="button_seventy_five">75%</button>
+                            </div>
+                        </div>
+                    </div>
+                    <!--  -->
+                    <div id="number_of_people">
+                        <label for="count_of_people" id="label_people" class="label_class" style="margin-bottom: 10px;">Number of People</label>
+                        <div id="count_of_people">
+                            <div id="man_pic"></div>
+                            <div id="counter_buttons">
+                                <button id="increment">+</button>
+                                <div id="counter_div">
+                                    <p id="counter_para">1</p>
+                                </div>
+                                <button id="decrement">-</button>
+                            </div>
+                        </div>
+                        <!-- <div id="generate_button_div">
+                        </div> -->
+                        <button id="generate_button" style="margin-top: 20px;"><p id="generate_button_para">Generate Bill</p></button>
+                    </div>
+                    <!--  -->
+                    <!--  -->
+                </div>
+                <div id="container_down_right">
+                    <div id="container_down_right_up">
+                        <div id="tip_amount_div">
+                            <div id="tip_amount">
+                                <p id="tip_amount_para" class="tip_total">Tip Amount</p>
+                                <p id="tip_amount_person_para" class="person_class">/ person</p>
+                            </div>
+                            <div>
+                                <p id="tip_amount_number" class="tip_total_amount">0.00</p>
+                            </div>
+                        </div>
+                        <!--  -->
+                        <div id="total_div">
+                            <div id="total">
+                                <p id="total_para" class="tip_total">Total</p>
+                                <p id="total_person_para" class="person_class">/ person</p>
+                            </div>
+                            <div>
+                                <p id="total_number" class="tip_total_amount">0.00</p>
+                            </div>
+                        </div>
+                    </div>
+                    <!--  -->
+                    <div id="container_down_right_down">
+                        <div id="reset_button_div">
+                            <button id="reset_button"><p id="reset_button_para">RESET</p></button>
+                        </div>
+                    </div>
+                    <!--  -->
+                    <!--  -->
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <script src="./script.js"></script>
+</body>
+</html>
